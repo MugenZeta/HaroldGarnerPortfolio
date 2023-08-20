@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Edu SA Beginner";
+  scr: url(site_assets/fonts/EduSABeginner-VariableFont_wght.ttf);
+}
+background{
+  background-color: #055C9D;
+}
+
+p, b, i{
+  font-family: "Edu SA Beginner", Arial, Helvetica, sans-serif;
+  color: #e39068;
+}
