@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./square-button.component.css']
 })
 export class SquareButtonComponent {
+  isOn: boolean = false;
+
 
 }
