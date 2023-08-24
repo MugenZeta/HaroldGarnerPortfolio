@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Edu SA Beginner";
-  scr: url(/src/site_assets/fonts/EduSABeginner-VariableFont_wght.ttf) format('truetype');
+  src: url("/src/site_assets/fonts/EduSABeginner-VariableFont_wght.ttf") format('truetype');
 }
 
 div{
