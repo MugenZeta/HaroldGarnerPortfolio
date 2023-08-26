@@ -1,5 +1,6 @@
 button{
   background-color: white;
+  border-radius: 64px;
 }
 button:hover{
   background-color: #0E86D4;
