@@ -8,6 +8,7 @@ import { CircleButtonComponent } from './circle-button/circle-button.component';
 import { SectionAComponent } from './section-a/section-a.component';
 import { SectionBComponent } from './section-b/section-b.component';
 import { SquareButtonComponent } from './square-button/square-button.component';
+import { ImageLoaderComponent } from './image-loader/image-loader.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SquareButtonComponent } from './square-button/square-button.component';
     CircleButtonComponent,
     SectionAComponent,
     SectionBComponent,
-    SquareButtonComponent
+    SquareButtonComponent,
+    ImageLoaderComponent
   ],
   imports: [
     BrowserModule,

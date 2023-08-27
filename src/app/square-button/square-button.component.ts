@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {style} from "@angular/animations";
 
 // @ts-ignore
@@ -7,7 +7,13 @@ import {style} from "@angular/animations";
   templateUrl: './square-button.component.html',
   styleUrls: ['./square-button.component.css']
 })
-export class SquareButtonComponent {
+export class SquareButtonComponent implements OnInit{
+  /*
+  iconName: string = "";
+  //iconUrl : url = new url("https://www.linkedin.com/in/harold-g-357923121/");
+  iconSource : string = "";
+  iconAltText : string = "";
+
   iconList : any[] = [
     {
       "name": "LinkedIn",
@@ -22,4 +28,7 @@ export class SquareButtonComponent {
       "iconAltText": "Github"
     }
   ]
+  */
+   constructor() {
+   }
 }
