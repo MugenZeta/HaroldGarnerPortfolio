@@ -9,6 +9,10 @@ import { SectionAComponent } from './section-a/section-a.component';
 import { SectionBComponent } from './section-b/section-b.component';
 import { SquareButtonComponent } from './square-button/square-button.component';
 import { ImageLoaderComponent } from './image-loader/image-loader.component';
+import {NgOptimizedImage} from "@angular/common";
+import { IconloaderComponent } from './iconloader/iconloader.component';
+import { IconLoaderComponent } from './icon-loader/icon-loader.component';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,16 @@ import { ImageLoaderComponent } from './image-loader/image-loader.component';
     SectionAComponent,
     SectionBComponent,
     SquareButtonComponent,
-    ImageLoaderComponent
+    ImageLoaderComponent,
+    IconloaderComponent,
+    IconLoaderComponent,
+    IconComponent
   ],
-  imports: [
-    BrowserModule,
-    NgbModule
-  ],
+    imports: [
+        BrowserModule,
+        NgbModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
