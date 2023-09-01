@@ -1,24 +1,50 @@
-<div class = "col-md-2 d-flex">
+
+
+
+          <img src="#">
+          <p> Harold D. Garner</p>
+          <div class="container">
+            <div class="row centered">
+              <div class="col align-content-center">
+                <app-square-button></app-square-button>
+              </div>
+              <div class="col align-content-center">
+                <app-square-button></app-square-button>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <b>
+              <li *ngFor="let items of NavBarList">
+                {{ items.item }}
+              </li>
+            </b>
+          </ul>
+
+
+
+
+<!--
   <div ngbNav #nav="ngbNav" class="flex-column align-content-center" orientation="vertical">
     <img src="#">
     <p> Harold D. Garner</p>
-    <!-- Container for Button -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <app-square-button></app-square-button>
-        </div>
-        <div class="col">
-          <app-square-button></app-square-button>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-square-button></app-square-button>
     </div>
-    <ul>
-      <b>
-        <li *ngFor="let items of NavBarList">
-          {{ items.item }}
-        </li>
-      </b>
-    </ul>
+    <div class="col">
+      <app-square-button></app-square-button>
+    </div>
   </div>
 </div>
+<ul>
+  <b>
+    <li *ngFor="let items of NavBarList">
+      {{ items.item }}
+    </li>
+  </b>
+</ul>
+</div>
+
+-->

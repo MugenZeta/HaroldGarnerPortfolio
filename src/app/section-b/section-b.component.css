@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Edu SA Beginner";
+  src: url("/src/site_assets/fonts/EduSABeginner-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Abel;
+  src: url("/src/site_assets/fonts/Abel-Regular.ttf") format('truetype');
+}
+
+div{
+  background-color: #68BBE3;
+  height: 640px;
+  width: 1220px;
+}
+
+h1, h2, h3{
+  font-family: Abel;
+  color: #003060;
+  text-align: center;
+}
+
+p, b, i{
+  font-family: "Edu SA Beginner";
+  color: #003060;
+  text-align: center;
+}
