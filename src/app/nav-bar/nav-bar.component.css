@@ -9,6 +9,7 @@ p, b, i{
   color: #e39068;
   font-size: 24px;
   padding-top: 10px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -16,7 +17,7 @@ p, b, i{
 li{
   list-style: none;
   padding-bottom: 24px;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 
 li:hover{

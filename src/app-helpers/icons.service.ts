@@ -11,8 +11,11 @@ export class IconsService {
 
 
   getIcons(): icons[] { return ICONS;}
+  /*
   getIcon(name: string): { iconName: icons }[] {
     let iconLocation: string[];
     iconLocation = this.getIcons().map(il => name);
-  }
+  }*/
 }
+
+

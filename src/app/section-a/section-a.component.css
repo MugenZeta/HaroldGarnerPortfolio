@@ -11,7 +11,6 @@
 div{
   background-color: white;
   height: 640px;
-  width: 1220px;
 }
 
 h1, h2, h3{
@@ -24,5 +23,6 @@ p, b, i{
   font-family: "Edu SA Beginner";
   color: #003060;
   text-align: center;
+  font-size: 24px;
 }
 
