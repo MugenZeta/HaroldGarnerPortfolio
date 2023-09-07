@@ -10,12 +10,13 @@ export class AppComponent {
   // About me is last due to how long the content string is
 
   Projects:string = "Projects";
-  ProjectsContent: string = "";
+  ProjectsContent: string = "This section contains my best personal projects.\n" +
+    "Please click the folder icon to get a description of the project and technologies used.";
 
   Experience: string = "Experience";
   ExperienceContent: string = "This is a list of all my experience for various technologies over my time of self study projects, bootcamps, and professional spaces.";
 
-  ContactMe:string = "Contact Me";
+  ContactMe: string = "Contact Me";
   ContactMeContent: string = "";
 
   AboutMe: string = "About Me";

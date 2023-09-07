@@ -6,6 +6,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./section-b.component.css']
 })
 export class SectionBComponent {
-  @Input() sectionTitle = "";
-  @Input() sectionContent = "";
+  @Input() sectionTitle: string = "";
+  @Input() sectionContent: string = "";
+  @Input() showExtendedContent: boolean = false;
+  @Input() buttonSet: boolean = true;
 }

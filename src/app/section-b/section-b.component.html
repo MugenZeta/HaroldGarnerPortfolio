@@ -1,4 +1,10 @@
 <div>
   <h1>{{sectionTitle}}</h1>
   <p>{{sectionContent}}</p>
+  <div *ngIf="showExtendedContent">
+    <app-contact-me-form></app-contact-me-form>
+  </div>
+  <div *ngIf="buttonSet">
+    <app-circle-button></app-circle-button>
+  </div>
 </div>

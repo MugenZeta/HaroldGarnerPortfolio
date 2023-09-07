@@ -1,5 +1,7 @@
 <button>
-  <a>
-    <p>{{icon.iconSource}}</p>
-  </a>
+  <ng-container *ngIf="icon?.iconUrl">
+    <a [href]="icon?.iconUrl">
+      <app-icon></app-icon>
+    </a>
+  </ng-container>
 </button>
