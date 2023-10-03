@@ -26,3 +26,12 @@ p, b, i{
   text-align: center;
   font-size: 24px;
 }
+
+li{
+  list-style: none;
+}
+
+.customP{
+  font-family: "Edu SA Beginner";
+  text-align: left;
+}

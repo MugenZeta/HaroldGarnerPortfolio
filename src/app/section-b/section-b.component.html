@@ -1,10 +1,27 @@
 <div>
   <h1>{{sectionTitle}}</h1>
   <p>{{sectionContent}}</p>
+  <div *ngIf="buttonSet">
+    <ul>
+      <li>
+        <app-circle-button></app-circle-button>
+        <p class="customP"> Project 1</p>
+      </li>
+      <li>
+        <app-circle-button></app-circle-button>
+        <p class="customP"> Project 2</p>
+      </li>
+      <li>
+        <app-circle-button></app-circle-button>
+        <p class="customP"> Project 3</p>
+      </li>
+      <li>
+        <app-circle-button></app-circle-button>
+        <p class="customP"> Project 4</p>
+      </li>
+    </ul>
+  </div>
   <div *ngIf="showExtendedContent">
     <app-contact-me-form></app-contact-me-form>
-  </div>
-  <div *ngIf="buttonSet">
-    <app-circle-button></app-circle-button>
   </div>
 </div>
