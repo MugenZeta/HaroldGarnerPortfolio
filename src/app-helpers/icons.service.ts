@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import {Injectable, Input} from '@angular/core';
 
 import {icons} from "./icon-loader";
 import {ICONS} from "./icon-list";
+import {getIconData} from "./icon-helpers";
 
 
 @Injectable({
@@ -9,13 +10,9 @@ import {ICONS} from "./icon-list";
 })
 export class IconsService {
 
-
-  getIcons(): icons[] { return ICONS;}
-  /*
-  getIcon(name: string): { iconName: icons }[] {
-    let iconLocation: string[];
-    iconLocation = this.getIcons().map(il => name);
-  }*/
+  getIcons(): icons[] {
+    return ICONS;}
+  getIconByName(name: string) : void {
+    return getIconData(name)
+  }
 }
-
-

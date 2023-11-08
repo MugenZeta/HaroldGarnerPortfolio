@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { icons } from "../../app-helpers/icon-loader";
 import { IconsService } from "../../app-helpers/icons.service";
+import {getIconData} from "../../app-helpers/icon-helpers";
 
 @Component({
   selector: 'app-icon',
@@ -9,17 +10,20 @@ import { IconsService } from "../../app-helpers/icons.service";
 })
 export class IconComponent implements OnInit{
   selectedIcon?: icons;
+  @Input() name : string = "";
   constructor(private iService: IconsService) {}
 
   ngOnInit() {
-    this.getIcons();
+    this.getIconByName(this.name);
   }
 
-  getSelectedIcon(sIcon: icons): void{
-    this.selectedIcon = sIcon;
-  }
   getIcons(): void {
     this.iService.getIcons();
   }
 
+  getIconByName(name: string): void{
+    return this.iService.getIconByName(this.name);
+  }
+
+    protected readonly getIconData = getIconData;
 }
