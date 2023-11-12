@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import { icons } from "../../app-helpers/icon-loader";
 import { IconsService } from "../../app-helpers/icons.service";
 import {getIconData} from "../../app-helpers/icon-helpers";
+import {ICONS} from "../../app-helpers/icon-list";
 
 @Component({
   selector: 'app-icon',
@@ -25,5 +26,6 @@ export class IconComponent implements OnInit{
     return this.iService.getIconByName(this.name);
   }
 
-    protected readonly getIconData = getIconData;
+  protected readonly ICONS = ICONS;
+
 }

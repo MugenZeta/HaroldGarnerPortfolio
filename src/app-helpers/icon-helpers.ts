@@ -7,9 +7,9 @@ export const getIconData = (name :string) => {
     {
         for (let index = 0; index < ICONS.length; index++) {
             if (name === ICONS[index].iconName) {
-                loadSearchedDataSource(ICONS[index].iconSource);
-                loadSearchedDataURL(ICONS[index].iconUrl);
-                loadSearchedDataAltText(ICONS[index].iconAltText)
+                let iSource = ICONS[index].iconSource;
+                let iUrl = ICONS[index].iconUrl;
+                let altText =ICONS[index].iconAltText
 
             } else if (index === ICONS.length && name != ICONS[index].iconName) {
                 getIconData("Folder");
@@ -17,7 +17,4 @@ export const getIconData = (name :string) => {
         }
     }
     return searchByName(name);
-    function loadSearchedDataSource(iSource : string){ return iSource;}
-    function loadSearchedDataURL(iUrl : string){ return iUrl;}
-    function loadSearchedDataAltText(altText : string){ return altText;}
 };

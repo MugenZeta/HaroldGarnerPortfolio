@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ICONS} from "../../app-helpers/icon-list";
 
 @Component({
   selector: 'app-circle-button',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class CircleButtonComponent {
 
+  protected readonly ICONS = ICONS;
 }

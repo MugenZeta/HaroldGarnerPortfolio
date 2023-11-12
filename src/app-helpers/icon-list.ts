@@ -1,5 +1,5 @@
 import {icons} from "./icon-loader";
-let baseFilePath: string = "/src/site_assets/icons/";
+let baseFilePath: string = "../../site_assets/icons/";
 export const ICONS: icons[] = [
   {
     iconName : "LinkedIn",
