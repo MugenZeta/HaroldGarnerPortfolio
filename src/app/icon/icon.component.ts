@@ -1,8 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { icons } from "../../app-helpers/icon-loader";
 import { IconsService } from "../../app-helpers/icons.service";
-import {getIconData} from "../../app-helpers/icon-helpers";
-import {ICONS} from "../../app-helpers/icon-list";
 
 @Component({
   selector: 'app-icon',
@@ -10,9 +7,9 @@ import {ICONS} from "../../app-helpers/icon-list";
   styleUrls: ['./icon.component.css']
 })
 export class IconComponent implements OnInit{
-  selectedIcon?: icons;
-  @Input() name : string = "";
-  constructor(private iService: IconsService) {}
+  constructor(private iService: IconsService) {
+  }
+  @Input() name: string = this.iService.name;
 
   ngOnInit() {
     this.getIconByName(this.name);
@@ -23,9 +20,19 @@ export class IconComponent implements OnInit{
   }
 
   getIconByName(name: string): void{
-    return this.iService.getIconByName(this.name);
+    this.iService.getIconByName(this.name);
   }
 
-  protected readonly ICONS = ICONS;
+  public getSource(name: string): void{
+   this.iService.getIconDataSource(this.name)
+  }
+
+  public getUrl(name: string): void{
+    this.iService.getIconDataURL(this.name);
+  }
+
+  public getALtText(name: string): void{
+    this.iService.getIconDataAltText(this.name);
+}
 
 }
