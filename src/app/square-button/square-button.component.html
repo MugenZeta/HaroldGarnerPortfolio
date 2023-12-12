@@ -1,7 +1,7 @@
 <button>
-  <ng-container *ngIf="icon?.iconUrl">
-    <a [href]="icon?.iconUrl">
-      <app-icon></app-icon>
+  <ng-container>
+    <a href="{{getUrl(name)}}">
+      <img src="{{getSource(name)}}" alt="{{getAltText(name)}}">
     </a>
   </ng-container>
 </button>

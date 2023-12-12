@@ -10,21 +10,26 @@ export class IconsService {
 
   name : string = "";
   getName() : string{return this.name;}
+  setName(name: string):string {
+    return this.name = name;
+}
   getIcons(): icons[] {
     return ICONS;
   }
 
     // @ts-ignore
     getIconByName(name: string) {
-    name = this.getName()
-    for (let index = 0; index < ICONS.length; index++)
-    {
+    name = this.getName();
+    for(let index = 0; index < ICONS.length; index++) {
       if (name === ICONS[index].iconName) {
         return ICONS[index];
 
-      } else  { this.getIconByName("Folder");}
+      } else if(index == ICONS.length || name === "") {
+        this.setName("Folder");
+        this.getIconByName("Folder");
+      }
     }
-  }
+    }
 
   getIconDataSource(name: string): string {
       name = this.getName()

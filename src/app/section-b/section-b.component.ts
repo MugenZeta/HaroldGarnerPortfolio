@@ -10,4 +10,6 @@ export class SectionBComponent {
   @Input() sectionContent: string = "";
   @Input() showExtendedContent: boolean = false;
   @Input() buttonSet: boolean = true;
+
+  Folder : string = "Folder";
 }
