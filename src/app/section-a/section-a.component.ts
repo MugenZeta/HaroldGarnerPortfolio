@@ -13,9 +13,10 @@ export class SectionAComponent {
 
   LinkedIn: string = "LinkedIn";
   Github: string = "Github";
+  Angular: string = "Angular";
   Bootstrap5 : string = "Bootstrap 5";
   Django : string = "DJango";
-  GitLab : string = "GitLab";
+  GitLab : string = "Gitlab";
   HTML : string = "HTML5";
   Folder: string = "Folder";
   Java: string = "Java";

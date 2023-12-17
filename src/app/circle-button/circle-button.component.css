@@ -7,5 +7,11 @@ button{
 }
 
 button:hover{
-  background-color: #0E86D4;
+  background-color: #D9D9D9;
+}
+
+img{
+  width: 48px;
+  height: 48px;
+  align-content: center;
 }

@@ -7,7 +7,7 @@
 
 p, b, i{
   font-family: "Edu SA Beginner";
-  color: #e39068;
+  color: #ffffff;
   font-size: 24px;
   padding-top: 10px;
   padding-left: 20px;
@@ -22,7 +22,7 @@ li{
 }
 
 li:hover{
-  color: #0E86D4;
+  color: #E2EE37;
 }
 
 .centered{

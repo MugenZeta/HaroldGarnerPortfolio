@@ -102,5 +102,11 @@ export const ICONS: icons[] = [
     iconUrl: "#",
     iconSource: `${baseFilePath}squarespace.svg`,
     iconAltText: "SquareSpace"
+  },
+  {
+    iconName: "Angular",
+    iconUrl: "#",
+    iconSource: `${baseFilePath}angular.svg`,
+    iconAltText: "Angular"
   }
 ]

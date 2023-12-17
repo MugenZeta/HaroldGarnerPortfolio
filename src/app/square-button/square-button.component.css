@@ -9,3 +9,9 @@ button{
 button:hover{
   background-color: #0E86D4;
 }
+
+img{
+  width: 32px;
+  height: 32px;
+  align-content: center;
+}
