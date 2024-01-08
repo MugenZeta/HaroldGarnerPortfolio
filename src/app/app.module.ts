@@ -10,7 +10,8 @@ import { SectionBComponent } from './section-b/section-b.component';
 import { SquareButtonComponent } from './square-button/square-button.component';
 import {NgOptimizedImage} from "@angular/common";
 import { ContactMeFormComponent } from './contact-me-form/contact-me-form.component';
-import { ProjectDescriptionSidebarComponent } from './project-description-sidebar/project-description-sidebar.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { SmallCircleButtonComponent } from './small-circle-button/small-circle-button.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ProjectDescriptionSidebarComponent } from './project-description-sideba
         SectionBComponent,
         SquareButtonComponent,
         ContactMeFormComponent,
-        ProjectDescriptionSidebarComponent,
+        ProjectCardComponent,
+        SmallCircleButtonComponent,
 
     ],
     imports: [
