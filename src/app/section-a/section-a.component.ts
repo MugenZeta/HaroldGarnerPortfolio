@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {ICONS} from "../../app-helpers/icon-list";
+import {ICONS} from "../../services/icon-service/icon-list";
 
 @Component({
   selector: 'app-section-a',

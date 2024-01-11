@@ -2,24 +2,9 @@
   <h1 class="p-3">{{sectionTitle}}</h1>
   <p class="m-4">{{sectionContent}}</p>
   <div *ngIf="showExtendedContent">
-    <div class="row-cols-1">
-      <span class="container">
-        <app-circle-button name="Angular"></app-circle-button>
-        <app-circle-button name="Bootstrap 5"></app-circle-button>
-        <app-circle-button name="DJango"></app-circle-button>
-        <app-circle-button name="Java"></app-circle-button>
-        <app-circle-button name="SASS"></app-circle-button>
-        <app-circle-button name="HTML5"></app-circle-button>
-        <app-circle-button name="Gitlab"></app-circle-button>
-      </span>
-      <span class="container">
-        <app-circle-button name="NodeJS"></app-circle-button>
-        <app-circle-button name="Typescript"></app-circle-button>
-        <app-circle-button name="Postgresql"></app-circle-button>
-        <app-circle-button name="NodeJS"></app-circle-button>
-        <app-circle-button name="SquareSpace"></app-circle-button>
-        <app-circle-button name="Python"></app-circle-button>
-        <app-circle-button name="React"></app-circle-button>
+    <div style="max-width: max-content">
+      <span>
+        <app-icon-spread></app-icon-spread>
       </span>
     </div>
   </div>

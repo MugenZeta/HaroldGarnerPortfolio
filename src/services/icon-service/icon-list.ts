@@ -16,8 +16,8 @@ export const ICONS: icons[] = [
   {
     iconName : "Bootstrap 5",
     iconUrl: "#",
-    iconSource: `${baseFilePath}css3.svg`,
-    iconAltText: "CSS"
+    iconSource: `${baseFilePath}bootstrap.svg`,
+    iconAltText: "Bootstrap 5"
   },
   {
     iconName : "DJango",
@@ -108,5 +108,11 @@ export const ICONS: icons[] = [
     iconUrl: "#",
     iconSource: `${baseFilePath}angular.svg`,
     iconAltText: "Angular"
+  },
+  {
+    iconName: "CSS 3",
+    iconUrl: "#",
+    iconSource: `${baseFilePath}css3.svg`,
+    iconAltText: "CSS 3"
   }
 ]

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IconsService} from "../../app-helpers/icons.service";
+import {IconsService} from "../../services/icon-service/icons.service";
 
 // @ts-ignore
 @Component({

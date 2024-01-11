@@ -1,20 +1,21 @@
-
-<img src="src/site_assets/icons/gitlab.svg">
-<p><b> Harold D. Garner</b></p>
-  <div class="">
-    <div class="d-flex justify-content-around">
-      <div class="col-auto">
-        <app-square-button [name]="Github"></app-square-button>
-      </div>
-      <div class="col-auto">
-        <app-square-button [name]="LinkedIn"></app-square-button>
+<div class="container-fluid">
+  <img src="src/site_assets/icons/gitlab.svg">
+  <p><b> Harold D. Garner</b></p>
+    <div class="">
+      <div class="d-flex justify-content-around">
+        <div class="col-auto">
+          <app-square-button [name]="Github"></app-square-button>
+        </div>
+        <div class="col-auto">
+          <app-square-button [name]="LinkedIn"></app-square-button>
+        </div>
       </div>
     </div>
-  </div>
-<ul>
-  <b>
-    <li *ngFor="let items of NavBarList">
-      {{ items.item }}
-    </li>
-  </b>
-</ul>
+  <ul>
+    <b>
+      <li *ngFor="let items of NavBarList">
+        {{ items.item }}
+      </li>
+    </b>
+  </ul>
+</div>

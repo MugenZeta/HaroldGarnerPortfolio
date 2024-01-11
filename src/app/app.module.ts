@@ -12,6 +12,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { ContactMeFormComponent } from './contact-me-form/contact-me-form.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { SmallCircleButtonComponent } from './small-circle-button/small-circle-button.component';
+import { IconSpreadComponent } from './icon-spread/icon-spread.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SmallCircleButtonComponent } from './small-circle-button/small-circle-b
         ContactMeFormComponent,
         ProjectCardComponent,
         SmallCircleButtonComponent,
+        IconSpreadComponent,
 
     ],
     imports: [

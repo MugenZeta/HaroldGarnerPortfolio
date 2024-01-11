@@ -1,8 +1,8 @@
-import {icons} from "./icon-loader";
+import {icons} from "../icon-service/icon-loader";
 
 export interface projects{
   projectName : string;
   projectDescription : string;
   projectScreenshot : string | undefined;
-  projectTechnologies : icons;
+  projectRepo: string;
 }

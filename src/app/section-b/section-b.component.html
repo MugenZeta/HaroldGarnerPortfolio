@@ -2,27 +2,10 @@
   <h1>{{sectionTitle}}</h1>
   <p>{{sectionContent}}</p>
   <div *ngIf="buttonSet">
-    <!--
-    <ul>
-      <li>
-        <app-circle-button></app-circle-button>
-        <p class="customP"> Project 1</p>
-      </li>
-      <li>
-        <app-circle-button></app-circle-button>
-        <p class="customP"> Project 2</p>
-      </li>
-      <li>
-        <app-circle-button></app-circle-button>
-        <p class="customP"> Project 3</p>
-      </li>
-      <li>
-        <app-circle-button></app-circle-button>
-        <p class="customP"> Project 4</p>
-      </li>
-    </ul>
-    -->
-    <span class="row p-1 g-3">
+    <span class="d-flex gap-5">
+      <app-project-card></app-project-card>
+      <app-project-card></app-project-card>
+      <app-project-card></app-project-card>
       <app-project-card></app-project-card>
     </span>
   </div>
