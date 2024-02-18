@@ -5,4 +5,5 @@ export interface projects{
   projectDescription : string;
   projectScreenshot : string | undefined;
   projectRepo: string;
+  projectTech: any;
 }

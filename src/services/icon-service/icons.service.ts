@@ -1,4 +1,4 @@
-import {Injectable, Input} from '@angular/core';
+import {Injectable} from '@angular/core';
 
 import {icons} from "./icon-loader";
 import {ICONS} from "./icon-list";
