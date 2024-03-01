@@ -13,40 +13,50 @@ export class IconsService {
   setName(name: string):string {
     return this.name = name;
 }
-  getIcons(): icons[] {
-    return ICONS;
+
+  private findIconByName(name : string){
+    return ICONS.find(icon =>icon.iconName === name) || null;
   }
 
-    // @ts-ignore
-    getIconByName(name: string) {
-    name = this.getName();
-    for(let index = 0; index < ICONS.length; index++) {
-      if (name === ICONS[index].iconName) {
-        return ICONS[index];
+  getIconByName(name: string){
+    let icon = this.findIconByName(name);
+    if(icon){
+      return icon;
+    } else {
+      this.setName("Folder")
+      return this.findIconByName("Folder");
+    }
+  }
 
-      } else if(index == ICONS.length || name === "") {
-        this.setName("Folder");
-        this.getIconByName("Folder");
-      }
-    }
-    }
 
   getIconDataSource(name: string): string {
-      name = this.getName()
-      // @ts-ignore
-      return this.getIconByName(name).iconSource;
+    name = this.getName();
+    const icon = this.getIconByName(name);
+    if (!icon) {
+      throw new Error(`Icon not found with name: ${name}`);
+    } else {
+      return icon.iconSource;
+    }
   }
 
   getIconDataURL(name: string): string {
-      name = this.getName()
-      // @ts-ignore
-      return this.getIconByName(name).iconUrl
+      name = this.getName();
+      const icon = this.getIconByName(name);
+      if (!icon) {
+        throw new Error(`Icon not found with name: ${name}`);
+      } else {
+        return icon.iconUrl;
+      }
   }
 
   public getIconDataAltText(name: string): string{
       name = this.getName();
-      // @ts-ignore
-      return this.getIconByName(name).iconAltText
+      const icon = this.getIconByName(name);
+      if(!icon){
+        throw new Error(`Icon not found with name: ${name}`);
+      } else {
+        return icon.iconAltText;
+      }
   }
 
 }

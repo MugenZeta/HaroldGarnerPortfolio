@@ -14,11 +14,6 @@ export class CircleButtonComponent implements OnInit{
   @Input() name: string = "";
   ngOnInit() {
     this.iService.name = this.name;
-    console.log(`the iService Name is:${this.iService.name}`);
-  }
-
-  getIcons(): void {
-    this.iService.getIcons();
   }
 
 

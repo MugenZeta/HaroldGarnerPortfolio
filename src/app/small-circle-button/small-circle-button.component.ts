@@ -16,10 +16,6 @@ export class SmallCircleButtonComponent  implements OnInit{
     console.log(`the iService Name is:${this.iService.name}`);
   }
 
-  getIcons(): void {
-    this.iService.getIcons();
-  }
-
 
   getIconByName = (name: string): string => {
     // @ts-ignore

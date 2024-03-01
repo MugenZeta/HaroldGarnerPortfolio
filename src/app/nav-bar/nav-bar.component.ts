@@ -24,7 +24,4 @@ export class NavBarComponent {
       "item": "Resume"
     }
   ];
-
-  LinkedIn: string = "LinkedIn";
-  Github: string = "Github";
 }

@@ -18,10 +18,6 @@ export class SquareButtonComponent implements OnInit{
     console.log(`the iService Name is NAVBAR:${this.iService.name}`);
   }
 
-  getIcons(): void {
-    this.iService.getIcons();
-  }
-
 
   getIconByName = (name: string): string => {
     this.iService.setName(name);
