@@ -13,38 +13,25 @@ export class SquareButtonComponent implements OnInit{
 
   @Input() name: string = "";
 
-  ngOnInit() {
-    this.iService.name = this.name;
-    console.log(`the iService Name is NAVBAR:${this.iService.name}`);
-  }
+  ngOnInit() {}
 
-
-  getIconByName = (name: string): string => {
+  setNameAndReturnIcon(name: string) {
     this.iService.setName(name);
-    // @ts-ignore
-    name = this.iService.getIconByName(this.name).iconName;
-    console.log(`Current Name is NAVBAR: ${name}`);
-    return name;
+    return this.iService.getIconByName(this.name);
   }
 
-  public getSource = (name: string): string =>{
-    this.iService.setName(name);
-    name = this.iService.getIconDataSource(this.name);
-    console.log(name);
-    return name;
+  getSource(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconSource : '';
   }
 
-  public getUrl = (name: string): string => {
-    this.iService.setName(name);
-    name = this.iService.getIconDataURL(this.name);
-    console.log(`get URL for NAVBAR: ${name}`);
-    return name;
+  getUrl(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconUrl : '';
   }
 
-  public getAltText = (name: string): string => {
-    name = this.iService.getIconDataAltText(this.name);
-    console.log(`get alt text for NAVBAR: ${name}`);
-    return name;
+  getAltText(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconAltText : '';
   }
-
 }

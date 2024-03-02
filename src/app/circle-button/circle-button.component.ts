@@ -16,32 +16,25 @@ export class CircleButtonComponent implements OnInit{
     this.iService.name = this.name;
   }
 
-
-  getIconByName = (name: string): string => {
-    // @ts-ignore
-    name = this.iService.getIconByName(this.name).iconName;
-    console.log(`Current Name is: ${name}`);
-    return name;
-  }
-
-  public getSource = (name: string): string =>{
+  setNameAndReturnIcon(name: string) {
     this.iService.setName(name);
-    name = this.iService.getIconDataSource(this.name);
-    console.log(name);
-    return name;
+    return this.iService.getIconByName(this.name);
   }
 
-  public getUrl = (name: string): string => {
-    this.iService.setName(name);
-    name = this.iService.getIconDataURL(this.name);
-    console.log(`get URL for: ${name}`);
-    return name;
+
+  getSource(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconSource : '';
   }
 
-  public getAltText = (name: string): string => {
-    name = this.iService.getIconDataAltText(this.name);
-    console.log(`get alt text for: ${name}`);
-    return name;
+  getUrl(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconUrl : '';
+  }
+
+  getAltText(name: string): string {
+    const icon = this.setNameAndReturnIcon(name);
+    return icon ? icon.iconAltText : '';
   }
 
 }

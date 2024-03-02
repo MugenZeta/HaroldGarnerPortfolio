@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import { Observable } from "rxjs";
 import { projects } from "./project-interface";
 import { PROJECT_INFO } from "./project-list";
 
@@ -6,14 +8,18 @@ import {IconsService} from "../icon-service/icons.service";
 @Injectable({providedIn: 'root'})
 
 export class ProjectService {
-  constructor() { }
+  constructor(private http : HttpClient) { }
 
+  getProjects(): Observable<any> {
+      return this.http.get<any>('https://api.github.com/users/MugenZeta/repos');
+  }
+
+  /*
   name : string = "";
   getName() : string{return this.name;}
-  setName(name: string):string {return this.name = name;}
-
-  getProjects(): projects[] {return PROJECT_INFO;}
-
+  setName(name: string):string {
+    return this.name = name;
+  }
   // @ts-ignore
 
   getProjectByName(name: string) {
@@ -45,5 +51,5 @@ export class ProjectService {
     name = this.getName();
     // @ts-ignore
     return this.getIconByName(name).iconAltText
-  }
+  }*/
 }
