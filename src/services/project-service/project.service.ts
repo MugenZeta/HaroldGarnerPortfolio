@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Observable } from "rxjs";
 import { projects } from "./project-interface";
-import { PROJECT_INFO } from "./project-list";
 
 import {IconsService} from "../icon-service/icons.service";
 @Injectable({providedIn: 'root'})

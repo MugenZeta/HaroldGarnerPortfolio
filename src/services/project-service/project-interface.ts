@@ -4,6 +4,6 @@ export interface projects{
   projectName : string;
   projectDescription : string;
   projectScreenshot : string;
-  projectRepo: string;
+  projectRepoURL: string;
   projectTech: icons[];
 }
