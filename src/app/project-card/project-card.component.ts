@@ -16,12 +16,18 @@ export class ProjectCardComponent implements OnInit{
 
   ngOnInit(): void {
       this.getProject();
+      this.showData();
   }
 
+  showData() {
+    this.ProjectService.projectData.subscribe(
+      projectData => console.log(projectData));
+    }
+
   getProject(): void {
-      this.ProjectService.getProjects().subscribe( data => { this.data = data;
-      console.log(this.data)}
-      )
+      // this.ProjectService.getProjects().subscribe( data => { this.data = data;
+      // console.log(this.data)}
+      //)
   }
 
 }
