@@ -1,9 +1,9 @@
 import {icons} from "../icon-service/icon-loader";
 
 export interface projects{
-  projectName : string;
-  projectDescription : string;
-  projectScreenshot : string;
-  projectRepoURL: string;
-  projectTech: icons[];
+  name : string;
+  description : string;
+  screenshot : string;
+  html_url: string;
+  tech: icons[];
 }

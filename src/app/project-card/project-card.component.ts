@@ -25,9 +25,9 @@ export class ProjectCardComponent implements OnInit{
     }
 
   getProject(): void {
-      // this.ProjectService.getProjects().subscribe( data => { this.data = data;
-      // console.log(this.data)}
-      //)
+      this.ProjectService.getProjects().subscribe( data => { this.data = data;
+      console.log(this.data)}
+      )
   }
 
 }

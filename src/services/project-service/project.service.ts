@@ -16,11 +16,11 @@ export class ProjectService {
   projectData = this.getProjects().pipe(
       map( projectData => projectData.map
         (project => ({
-          RepoName: project.projectName,
-          RepoDescription: project.projectDescription,
-          RepoScreenshot: project.projectScreenshot,
-          RepoRepoURL: project.projectRepoURL,
-          RepoTech: project.projectTech
+          name: project.name,
+          description: project.description,
+          RepoScreenshot: project.screenshot,
+          html_url: project.html_url,
+          tech: project.tech
         }))));
 
 
