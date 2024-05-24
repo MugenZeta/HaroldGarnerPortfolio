@@ -5,5 +5,4 @@ export interface projects{
   description : string;
   screenshot : string;
   html_url: string;
-  tech: icons[];
 }

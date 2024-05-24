@@ -1,16 +1,14 @@
 <div class="card m-4" style="width: 18rem; height: 30rem">
   <img src="favicon.ico" >
   <div class="card-body">
-    <h4 class="card-title"> TITLE </h4>
-    <p class="card-text text-truncate"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <h4 class="card-title">{{getTitle(name)}} </h4>
+    <p class="card-text text-truncate">{{getDescription(name)}}</p>
   </div>
   <div class="card-footer">
     <button class="btn">
-
+      <p>
+        <a href="{{getUrl}}">See Source Code</a>
+      </p>
     </button>
-    <app-small-circle-button name="Angular"></app-small-circle-button>
   </div>
 </div>

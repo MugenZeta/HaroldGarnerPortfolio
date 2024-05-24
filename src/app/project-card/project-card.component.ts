@@ -11,12 +11,12 @@ export class ProjectCardComponent implements OnInit{
   constructor(private ProjectService: ProjectService) {
   }
   data: any;
-  @Input() ProjectName: string = "";
-  @Input() ProjectDescription: string = "";
+  @Input() name: string = "";
 
   ngOnInit(): void {
       this.getProject();
       this.showData();
+      this.ProjectService.name = this.name;
   }
 
   showData() {
@@ -29,5 +29,11 @@ export class ProjectCardComponent implements OnInit{
       console.log(this.data)}
       )
   }
+
+  getTitle(name:string):string {return this.name}
+  getDescription(name:string):string {return this.name;}
+  getScreenshotName(name:string):string {return this.name;}
+  getUrl(name:string):string {return this.name;}
+
 
 }
