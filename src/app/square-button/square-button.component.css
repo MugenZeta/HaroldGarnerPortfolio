@@ -3,7 +3,7 @@ button{
   border-radius: 8px;
   width: 48px;
   height: 48px;
-  border-color: #E39068;
+  border-color:  lightgray;
   align-self: center;
 }
 button:hover{

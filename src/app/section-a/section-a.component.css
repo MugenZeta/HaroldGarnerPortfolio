@@ -27,6 +27,10 @@ p, b, i{
   font-size: 24px;
 }
 
+topPadding{
+  padding-top: 80px;
+}
+
 span{
     position: relative;
     top: -5%;

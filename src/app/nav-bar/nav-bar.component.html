@@ -1,21 +1,39 @@
-<div class="container-fluid">
-  <img src="src/site_assets/icons/gitlab.svg">
-  <p><b> Harold D. Garner</b></p>
-    <div class="">
-      <div class="d-flex justify-content-around">
-        <div class="col-auto">
-          <app-square-button name="Github"></app-square-button>
-        </div>
-        <div class="col-auto">
-          <app-square-button name="LinkedIn"></app-square-button>
-        </div>
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b>Harold D. Garner</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link  align-content-center" aria-current="page" href="#">About Me</a>
+        <a class="nav-link  align-content-center colorChange" href="#">Projects</a>
+        <a class="nav-link  align-content-center colorChange" href="#">Experience</a>
+        <a class="nav-link  align-content-center colorChange" href="#">Contact Me</a>
+        <app-square-button name="Github" class="nav-link"></app-square-button>
+        <app-square-button name="LinkedIn" class="nav-link"></app-square-button>
       </div>
     </div>
-  <ul>
-    <b>
-      <li *ngFor="let items of NavBarList">
-        {{ items.item }}
-      </li>
-    </b>
-  </ul>
+  </div>
+  </nav>
+<!--
+<img src="src/site_assets/icons/gitlab.svg">
+<p><b> Harold D. Garner</b></p>
+<div class="">
+  <div class="">
+    <div class="">
+      <app-square-button name="Github"></app-square-button>
+    </div>
+    <div class="">
+      <app-square-button name="LinkedIn"></app-square-button>
+    </div>
+  </div>
 </div>
+<ul class="navbar-nav">
+  <b>
+    <li class="nav-item" *ngFor="let items of NavBarList">
+      {{ items.item }}
+    </li>
+  </b>
+</ul>
+-->

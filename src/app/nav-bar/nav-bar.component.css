@@ -3,30 +3,16 @@
   src: url("/src/site_assets/fonts/EduSABeginner-VariableFont_wght.ttf") format('truetype');
 }
 
+img{
+  width: 32px;
+  height: 32px;
+}
 
-
-p, b, i{
+p, b, i, a{
   font-family: "Edu SA Beginner";
-  color: #ffffff;
   font-size: 24px;
-  padding-top: 10px;
-  padding-left: 20px;
-  text-align: center;
 }
 
-
-li{
-  list-style: none;
-  padding-bottom: 24px;
-  /*padding-left: 15px;*/
+a:hover{
+  color: black;
 }
-
-li:hover{
-  color: #E2EE37;
-}
-
-.centered{
-  padding-left: 20px;
-  padding-right: 30px;
-}
-
