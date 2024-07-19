@@ -14,6 +14,11 @@ div{
   height: 600px;
 }
 
+.Nav_Space{
+  background: white;
+  height: 800px;
+}
+
 h1, h2, h3{
   font-family: Abel;
   color: #003060;
