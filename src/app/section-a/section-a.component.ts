@@ -10,6 +10,4 @@ export class SectionAComponent {
   @Input() sectionTitle: string = "";
   @Input() sectionContent: string = "";
   @Input() showExtendedContent: boolean = false;
-
-  buttonCount: number = 14;
 }

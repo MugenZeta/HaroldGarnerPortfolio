@@ -33,7 +33,7 @@ export class CircleButtonComponent implements OnInit{
   }
 
   getAltText(name: string): string {
-    const icon = this.setNameAndReturnIcon(name);
+      const icon = this.setNameAndReturnIcon(name);
     return icon ? icon.iconAltText : '';
   }
 

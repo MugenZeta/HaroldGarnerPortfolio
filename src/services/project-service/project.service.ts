@@ -27,7 +27,7 @@ export class ProjectService {
           html_url: project.html_url
         }))));
 
-  parsedData:  Observable<{ name: string, description: string, RepoScreenshot: string, html_url: string }[]> =  this.projectData;
+  parsedData: Observable<{ name: string, description: string, RepoScreenshot: string, html_url: string }[]> =  this.projectData;
 
   private findProjectByName(name: string): Observable<{
     name: string;}[]> {
